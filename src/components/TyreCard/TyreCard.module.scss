@@ -1,0 +1,47 @@
+@import "../../assets/styles/variables";
+.tyre {
+  width: 400px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  justify-content: center;
+  align-items: center;
+  color: $secondary-color;
+  gap: 0 30px;
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px #969696;
+  .brand-logo {
+    grid-column: 2;
+    height: 40px;
+    width: auto;
+    margin: 0 auto;
+  }
+  .tyre-pic {
+    grid-column: 1;
+    grid-row: 1/5;
+    width: 110px;
+    height: auto;
+  }
+  h4,
+  h5,
+  p {
+    grid-column: 2;
+    margin: 0;
+    padding: 5px;
+  }
+  .price {
+    font-weight: bold;
+  }
+  .btn {
+    @include button;
+    font-weight: bold;
+    font-size: $font-l;
+    margin: 0 auto;
+  }
+  select {
+    height: 80%;
+    margin: 0 20px;
+  }
+}

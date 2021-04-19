@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/*-----------Colors-------------*/
+$primary-color: #00a88f;
+$secondary-color: #4a4545;
+$color3: #dc453a;
+
+/*----------Fonts---------------*/
+$font-family: "Lato", sans-serif;
+$font-s: 10px;
+$font-m: 14px;
+$font-l: 18px;
+$font-xl: 22px;
+
+/*-------------------Mixins---------------*/
+@mixin button {
+  background-color: $color3;
+  width: 140px;
+  padding: 0 10px;
+  line-height: 38px;
+  color: #fff;
+  font-family: $font-family;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
